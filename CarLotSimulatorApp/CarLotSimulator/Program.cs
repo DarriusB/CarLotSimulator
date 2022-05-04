@@ -20,6 +20,7 @@ namespace CarLotSimulator
             car1.IsDrivable = true;
 
             carLot.CarList.Add(car1);
+            Console.WriteLine($"Number of cars {CarLot.numberOfCars}");
 
             var car2 = new Car();
             car2.Make = "Honda";
@@ -30,6 +31,7 @@ namespace CarLotSimulator
             car2.IsDrivable = false;
 
             carLot.CarList.Add(car2);
+            Console.WriteLine($"Number of cars {CarLot.numberOfCars}");
 
             var car3 = new Car();
             car3.Make = "Ford";
@@ -40,6 +42,7 @@ namespace CarLotSimulator
             car3.IsDrivable = true;
 
             carLot.CarList.Add(car3);
+            Console.WriteLine($"Number of cars {CarLot.numberOfCars}");
 
             car1.MakeEngineNoise(car1.EngineNoise);
             car2.MakeEngineNoise(car2.EngineNoise);
@@ -55,6 +58,7 @@ namespace CarLotSimulator
                 Console.WriteLine();
             }
 
+            Console.WriteLine($"Number of cars {CarLot.numberOfCars}");
 
 
 
